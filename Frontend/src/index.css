@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+/* 🌐 Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 🌙 Body default */
+body {
+  @apply bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition duration-300;
+}
+
+/* 🔵 Gradient Background (Main Theme) */
+.bg-main {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+}
+
+/* 💎 Glassmorphism Card */
+.glass {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* 🔘 Professional Button */
+.btn-primary {
+  @apply bg-primary text-white px-6 py-2 rounded-xl hover:bg-secondary transition duration-300;
+}
+
+/* 🔘 Modern Button */
+.btn-modern {
+  @apply px-6 py-3 rounded-xl font-semibold transition transform hover:scale-105;
+}
+
+/* ✨ Glow Hover Effect */
+.glow:hover {
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.6);
+}
+
+/* 🧾 Card Style */
+.card {
+  @apply bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-6 transition hover:scale-105 hover:shadow-xl;
+}
+
+/* 🧠 Navbar Glass Effect */
+.nav-glass {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.dark .nav-glass {
+  background: rgba(31, 41, 55, 0.7);
+}
+
+/* 📜 Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2563EB;
+  border-radius: 10px;
+}
+
+/* 🌟 Section Spacing Helper */
+.section {
+  @apply py-16 px-6 md:px-20;
+}  
